@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>مفاجأة صغيرة ليكي 💞</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Tahoma, Arial, sans-serif;
+            color: #dfd9d9;
+            background: linear-gradient(135deg, #741a6e, #ee196e, #f5044c);
+            overflow-x: hidden;
+        }
+
+        .hearts {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -50px;
+            color: #df0c4f;
+            opacity: .75;
+            animation: float-up linear forwards;
+        }
+
+        @keyframes float-up {
+            to {
+                transform: translateY(-110vh) rotate(25deg);
+                opacity: 0;
+            }
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        .card {
+            width: min(100%, 850px);
+            padding: 32px;
+            text-align: center;
+            border: 1px solid #dee4dd50;
+            border-radius: 28px;
+            background: #eeeaea18;
+            box-shadow: 0 18px 60px #26001666;
+            backdrop-filter: blur(12px);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .login-card {
+            max-width: 460px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            border: 0;
+            border-radius: 14px;
+            padding: 14px 16px;
+            font-size: 1rem;
+        }
+
+        input {
+            margin: 12px 0;
+            text-align: center;
+        }
+
+        button {
+            color: #d41951;
+            background: #fff0f5;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #f7037d;
+        }
+
+        #error {
+            min-height: 24px;
+            color: #af0f47;
+        }
+
+        #surprise {
+            display: none;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 14px;
+            margin: 24px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 2px solid #e20a0a70;
+        }
+
+        .note {
+            padding: 20px;
+            border-radius: 18px;
+            background: #f7f4f420;
+            line-height: 1.9;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 12px;
+        }
+
+        .small {
+            font-size: .9rem;
+            opacity: .85;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hearts" id="hearts"></div>
+
+    <main>
+        <section class="card login-card" id="login">
+            <h1>💞مفاجأة صغيرة ليكي 💞</h1>
+            <p>اكتبي كلمة السر عشان تفتحي رسالتي يا أجمل حاجة في حياتي</p>
+            <form id="loginForm">
+                <input id="password" type="password" placeholder="كلمة السر" required>
+                <button type="submit">افتحي المفاجأة 💌</button>
+            </form>
+            <p id="error"></p>
+            <p class="small">القلوب دي كلها طالعة مخصوص عشانك 💕</p>
+        </section>
+        <section class="card" id="surprise">
+            <h1>💞كل حاجة حلوة في الدنيا بتفكرني بيكي 💖</h1>
+            <p class="note">
+                وجودك في حياتي أحلى هدية، وضحكتك أجمل حاجة بشوفها.
+                بحبك النهارده وبكرة وكل يوم يا حبيبتي 🌹
+            </p>
+            <p>دوسي علي الاغنيه دي اول حاجه👇
+                <audio controls autoplay>
+                    <source src="llevo.mp3" type="audio/mpeg">
+                </audio>
+
+            <div>ي قبل ا حاجه انا حبيت اجمع لكي كده حبت زكريات تفكرك بحجات تضحكي وتفرحك زيك كده يا قلبي 💖</div>
+
+
+
+
+
+
+
+            <!-- بدّلي الروابط بصوركم، مثلاً: src="صورتنا.jpg" -->
+            <img src="photo1.jpg" alt="صورتنا">
+            <p>كانت اول صوره بينا تبعتيها</p>
+            <img src="phto2.jpg" alt="صورتنا">
+            <p>برضو كانت اول صوره</p>
+            <img src="photo3.jpg" alt="صورتنا">
+            <p>كان اول واحد تلبسي </p>
+            <img src="pJoto4.jpg" alt="صورتنا">
+            <p>كان تاني واحد تلبسي </p>
+            <img src="photo5.jpg" alt="صورتنا">
+            <p>كان تالت واحد وقولتيلي اختار تلبسي 😂</p>
+            <img src="photo7.jpg" alt="صورتنا">
+            <p>احلي ضوافر طبعاا مقدارش انسهاا </p>
+            <img src="photo8.jpg" alt="صورتنا">
+            <p>احلي ضوافر برضو </p>
+            <img src="photo9.jpg" alt="صورتنا">
+            <p>كانت اول صوره واحنا متجمعين مع بعض</p>
+            <img src="photo10.jpg" alt="صورتنا">
+            <p>حجتي الي كانت جامده اويي </p>
+            <img src="phto12.jpg" alt="صورتنا">
+            <p>كانت احلي عروسه في الدنياااا </p>
+            <img src="photo11.jpg" alt="صورتنا">
+            <p>لزم تبقي بجوزك بقااا عيب </p>
+            <div class="video-box">
+                <video controls>
+                    <source src="eduo.mp4" type="video/mp4">
+
+                    المتصفح مش قادر يشغل الفيديو.
+                </video>
+                <p>لزم نختمهاا بحاجه حلوه اوي زيك يا قلبي 💖</p>
+            </div>
+
+
+            </div>
+            <p class="small"></p>
+        </section>
+
+        <script>
+            const PASSWORD = "بحبك"; // غيّري كلمة السر من هنا
+
+            document.getElementById("loginForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                const entered = document.getElementById("password").value;
+
+                if (entered === PASSWORD) {
+                    document.getElementById("login").style.display = "none";
+                    document.getElementById("surprise").style.display = "block";
+                } else {
+                    document.getElementById("error").textContent =
+                        "كلمة السر غلط، جربي تاني ❤️";
+                }
+            });
+
+            function makeHeart() {
+                const heart = document.createElement("span");
+                heart.className = "heart";
+                const emojis = ["😍", "💞", "😘", "❤️", "💕", "💖", "🌹", "✨", "💘", "💌"];
+                heart.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.fontSize = (16 + Math.random() * 28) + "px";
+                heart.style.animationDuration = (4 + Math.random() * 5) + "s";
+                document.getElementById("hearts").appendChild(heart);
+                setTimeout(() => heart.remove(), 9000);
+            }
+
+            setInterval(makeHeart, 350);
+        </script>
+
+
+        <div class="note" style="margin-top: 25px;">
+            <h2>توافقي تفضلي أجمل حكاية في حياتي؟ 💖</h2>
+
+            <button type="button" onclick="showMessage()">أيوه ❤️</button>
+
+            <p id="loveMessage" style="display: none; margin-top: 18px;">
+                بحبك أوي يا أجمل حاجة حصلتلي 💕🌹
+            </p>
+        </div>
+
+        <script>
+            function showMessage() {
+                document.getElementById("loveMessage").style.display = "block";
+            }
+        </script>
+
+</body>
+
+</html>
